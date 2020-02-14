@@ -22,6 +22,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install mock
         pip install pytest
+        pip install pytest-timeout
     - name: Test with pytest
       run: |
-        pytest -v --color=yes
+        pytest -v --color=yes --timeout=30
