@@ -4,7 +4,7 @@ Assignment Status: PENDING
 
 _Please change the above to DONE when you finish and want the assignment to be graded!_
 
-Due the night of September 16 at midnight 
+Due the night of September 18 at midnight 
 
 ## Instructions
 The homework pdf has all the basic instructions, but here are some additional guidelines:
