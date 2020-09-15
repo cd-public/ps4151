@@ -1,11 +1,10 @@
-# Homework 03
-![](https://github.com/<user_info>/workflows/Autotesting/badge.svg)
+# Homework 3
 
 Assignment Status: PENDING
 
 _Please change the above to DONE when you finish and want the assignment to be graded!_
 
-Due the night of February 14 at midnight (so romantic, I know...)
+Due the night of September 16 at midnight 
 
 ## Instructions
 The homework pdf has all the basic instructions, but here are some additional guidelines:
@@ -15,4 +14,4 @@ The homework pdf has all the basic instructions, but here are some additional gu
 
 
 #### Testing
-Problem 2, 3 all have around 4-5 tests each. Several of these are checking the examples shown in the text and others are checking other pieces of your submission. Be sure to check them for information on if you are missing something!
+This is a tough assignment to have auto-tests for, as the second problem is heavily random and the last problem is very qualitative. If I can figure out some tests for the secnod problem, I'll go ahead and add them, but you might be on your own to make sure you have followed the instructions properly for this homework.
