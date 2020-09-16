@@ -12,7 +12,7 @@ def get_heading(x1, y1, x2, y2):
     Returns the angle from horizontal in radians for a
     line draw between the two pairs of points.
     """
-    return math.atan2((x2-x1),(y2-y1))
+    return math.atan2((y2-y1),(x2-x1))
 
 
 def draw_face():
