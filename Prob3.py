@@ -10,9 +10,12 @@ import math
 def get_heading(x1, y1, x2, y2):
     """
     Returns the angle from horizontal in radians for a
-    line draw between the two pairs of points.
+    line draw between the two pairs of points. Correctly
+    flips the y-axis so that positive headings proceed
+    CCW from the horizontal axis and negative headings
+    are measured CW from the horizontal axis.
     """
-    return math.atan2((y2-y1),(x2-x1))
+    return math.atan2(-(y2-y1),(x2-x1))
 
 
 def draw_face():
