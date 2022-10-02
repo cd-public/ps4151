@@ -4,9 +4,10 @@
 # Estimate time spent (hrs):
 ########################################
 
-from pgl import GWindow, GState, GOval, GRect, GLine
+from pgl import GWindow, GOval, GRect, GLine
 
 def draw_face():
+    """ Draw's a face with eyeballs that track the position of the mouse. """
     # Add your eventual callback function here
 
 

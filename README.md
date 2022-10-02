@@ -1,24 +1,13 @@
-# Problem Set 3
-<details>
-<summary><em>metadata</em></summary>
-Category: problem-set<br>
-Points: 20<br>
-Due: 2021-09-27<br>
-</details>
+# Problem Set 4
 
-- [ ] Submitted?
-
-_Please insert an x in the square brackets above to mark the assignment as submitted!_
-
-Due the night of September 27th at midnight!
+Due on the night of October 8 at midnight!
 
 ## Instructions
-The homework pdf has all the basic instructions, but here are some additional guidelines:
- - [ ] Problem 1 is in 3 parts, with three different scripts that need fixing
- 	- Full descriptions of what each program is supposed to do are on the pdf
+The homework PDF has all the basic instructions, but here are some additional guidelines:
+ - [ ] Code for Problem 1 should be done in the `Prob1.py` file already in the repository. 
  - [ ] Code for Problem 2 should be done in the `Prob2.py` file already in the repository. 
  - [ ] Code for Problem 3 should be done in the `Prob3.py` file already in the repository. 
 
 
 #### Testing
-Owing to the flexible nature of the first problem, the random nature of the second problem and the purely visual nature of the 3rd problem, I can't easily make tests for those problems, so you are on your own to ensure they are working as intended!
+Due to the graphical nature of all of these problems, I can not easily write autotests to help you check your work. You'll just need to carefully read the PDF to ensure you are meeting all requirements.
