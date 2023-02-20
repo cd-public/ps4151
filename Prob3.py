@@ -4,20 +4,28 @@
 # Estimate time spent (hrs):
 ########################################
 
-from pgl import GWindow, GOval, GRect, GLine
+from pgl import GWindow, GRect, GLabel, GLine
+import random
 
-def draw_face():
-    """ Draw's a face with eyeballs that track the position of the mouse. """
-    # Add your eventual callback function here
+GW_WIDTH = 500                      # Width of window
+GW_HEIGHT = 500                     # Height of window
+SQUARE_SIZE = 50                    # Width and height of square
+SCORE_DX = 10                       # Distance from left of window to origin
+SCORE_DY = 10                       # Distance up from bottom of window to baseline
+SCORE_FONT = "bold 40pt 'serif'"    # Font for score
+
+def clicky_box():
+
+    # Defining the callback function, which you won't need until Part C
+    def on_mouse_down(event):
+        print("You clicked the window!") # Delete this once you start Part C
 
 
+    # Down here you should initialize the window and draw the initial square
+    # Make sure you tab it in so that it is part of the clicky_box function
 
+    gw = GWindow(GW_WIDTH, GW_HEIGHT)
 
-
-
-    # Add your code to create the window and draw the original
-    # face here. You can choose any reasonable colors or sizes
-    # of the face/window that you like.
 
 
 
@@ -30,4 +38,4 @@ def draw_face():
 
 
 if __name__ == '__main__':
-    draw_face()
+    clicky_box()
