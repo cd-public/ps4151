@@ -1,7 +1,5 @@
 # Problem Set 4
 
-Due on the night of February 25, 2023
-
 ## Instructions
 The homework PDF has all the basic instructions, but here are some additional guidelines:
  - [ ] Code for Problem 1 should be done in the `Prob1.py` file already in the repository. 
