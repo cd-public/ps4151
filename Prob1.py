@@ -1,6 +1,7 @@
 ############################################################
 # Name:
 # Name(s) of anyone worked with:
+# If you consulted AI, link to transcript: 
 # Est time spent (hr):
 ############################################################
 

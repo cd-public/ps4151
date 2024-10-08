@@ -9,4 +9,4 @@ The homework PDF has all the basic instructions, but here are some additional gu
 
 
 #### Testing
-Due to the graphical nature of all of these problems, I can not easily write autotests to help you check your work. You'll just need to carefully read the PDF to ensure you are meeting all requirements.
+Due to the graphical nature of all of these problems, I can not easily write autotests to help you check your work. You'll just need to carefully read the problem guide to ensure you are meeting all requirements.

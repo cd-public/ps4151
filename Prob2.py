@@ -1,8 +1,9 @@
-########################################
+############################################################
 # Name:
-# Collaborators:
+# Collaborators (if any):
+# If you consulted AI, link to transcript: 
 # Estimated time spent (hrs):
-########################################
+############################################################
 
 from pgl import GWindow, GRect
 
