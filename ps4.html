@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Problem Set 4: Graphics</title>
+		<style>
+		.page {
+			width: 9in ;
+			height: 11.5in;
+			margin: auto ;
+		}
+		.page_outer {
+			width: 8.5in;
+			height: 11in;
+			box-shadow: -.1in -.1in .25in darkgray, .1in .1in .25in gray;
+			position: relative ;
+		}
+		.page_inner{
+			margin: 1in;  
+			margin-top: .5in;  
+		}
+		th {
+			text-align: center ;
+            height: 1.5em;
+            width: 1.5em;
+            font-weight:normal;
+		}
+		td {
+			text-align: center ;
+            border: solid ;
+            height: 1.5em;
+            width: 1.5em;
+            
+		}
+		</style>
+		<style type="text/css" media="print">
+			.page {
+				width: 8.5in;
+				height: 11in;
+				margin: auto ;
+			}
+			.page_outer {
+				box-shadow: none;
+			}
+			a {
+				color: black;
+				text-decoration-line: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner"><center>
+					<h4>CS 151: Intro to Programming in Python</h4>
+					<h1>Problem Set 4: Graphics</h1>
+                    <h3>Due: Monday, 13 October, 11:59 PM</h3>
+                    <hr>
+                    </center>
+					<p>This is a problem set of 3 problems, all involving graphics operations.
+					<hr>
+                    <h2>Files:</h2>
+					<h3>1. <code>draw_image</code></h3>
+                    <ul>
+                        <li>Update (only) this file:
+                        <ul>
+                            <li>Prob1.py</li>
+                        </ul>
+                    </ul>
+					<h3>2. <code>draw_pyramid</code></h3>
+                    <ul>
+                        <li>Update (only) this file:
+                        <ul>
+                            <li>Prob2.py</li>
+                        </ul>
+                    </ul>
+					<h3>3. <code>clicky_box</code></h3>
+                    <ul>
+                        <li>Update (only) this file:
+                        <ul>
+                            <li>Prob3.py</li>
+                        </ul>
+                    </ul>
+                    <h3>All:</h3>
+                    <ul>
+                        <li>You will also need:
+                        <ul>
+                            <li>pgl.py</li>
+                        </ul>
+                    </ul>
+                    <hr>
+                    <h2>Resources on PGL (Portable Graphics Library):</h2>
+                    <ul>
+                        <li><a href="https://jrembold.github.io/Website_Backup/class_files/cs151/PythonSummary.html">Prof. Jed Rembold notes on PGL (and more)</a>
+                        <li><a href="https://willamette.edu/~esroberts/python/pgldoc/">Prof. Eric Roberts notes on PGL</a>
+                    </ul>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner">
+                    <h2>Problems:</h2>
+                    <h3>Problem 1: <code>draw_image</code></h3>
+                    <p>Write a function that, when run, uses PGL to draw something you find beautiful, or at least as close as you can manage on short notice. You must use at least one each of:
+                    <ol>
+                        <!-- GRect, GOval, GLine, GLabel -->
+                        <li><code>GRect</code>
+                        <li><code>GOval</code>
+                        <li><code>GLine</code>
+                        <li><code>GLabel</code>
+                    </ol>
+                    <p><b>How I solved it.</b> 
+                    <hr><pre style="font-size:larger"><code style="font-size:larger">def draw_image():
+
+    # Creating the window
+    gw = GWindow(WIDTH, HEIGHT)
+    
+    w = WIDTH # just to save typing
+    
+    #red box
+    r = GRect(w//2,w)
+    r.set_filled(True)
+    r.set_fill_color("red")
+    gw.add(r) 
+    
+    # green circle
+    o = GOval(w//2,w//2)
+    o.set_filled(True)
+    o.set_fill_color("green")
+    gw.add(o)
+    
+    # line for left side middle to rightside middle
+    gw.add(GLine(0,w//2,w,w//2))
+    
+    # that's half height, half width - the middle.
+    gw.add(GLabel("hello world", w//2, w//2)) </code></pre><hr>
+                </div>
+			</div>
+		</div>
+        		<div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner">
+                    <h2>Problems:</h2>
+                    <h3>Problem 1: <code>draw_image</code></h3>
+                    <p>Write a function that, when run, uses PGL to draw something you find beautiful, or at least as close as you can manage on short notice. You must use at least one each of:
+                    <ol>
+                        <!-- GRect, GOval, GLine, GLabel -->
+                        <li><code>GRect</code>
+                        <li><code>GOval</code>
+                        <li><code>GLine</code>
+                        <li><code>GLabel</code>
+                    </ol>
+                    <p><b>How I solved it.</b> 
+                    <hr><img width="100%" src="https://cd-public.github.io/courses/old/cs1f24/hws/imgs/ps4_1.png">
+                </div>
+			</div>
+		</div>
+		<div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner">
+                    <h3>Problem 2: <code>draw_pyramid</code></h3>
+                    <p>Write a function that, when run, uses PGL to display a pyramid of rectangles on the graphics window.
+                    <p>The pyramid consists of bricks arranged in horizontal rows, arranged so that the number of bricks decreases by one as you move upward, as shown in the demo. The pyramid should be centered perfectly in the window both horizontally and vertically. You should be able to change the following constants in your program and have it react appropriately by drawing the altered pyramid centered still within the window.
+                    <ol>
+                        <li><code>BRICK_WIDTH</code> The width of each brick
+                        <li><code>BRICK_HEIGHT</code> The height of each brick
+                        <li><code>BRICKS_IN_BASE</code> The number of bricks in the base (bottom) row
+                    </ol>
+                    <p><b>How I solved it.</b> I wrote an "n_bricks" function that made a horizontal row of bricks and then used a similar loop to the '*' pyramid, but multipled "height" and "width" rather than spaces.
+                    <h4>Demo</h4>
+                    <pre style="font-size:larger"><code>WIDTH          = 400 # for the demo, must be changeable in your code
+HEIGHT         = 400 # for the demo, must be changeable in your code
+BRICK_WIDTH    = <input id="w" type="number" value="40">
+BRICK_HEIGHT   = <input id="h" type="number" value="20">
+BRICKS_IN_BASE = <input id="b" type="number" value="15"><button onclick="draw()">Draw</button></code></pre>
+                    <script>
+                        function draw()
+                        {
+                            const s = 400 ;
+                            const w = parseInt(document.getElementById("w").value) ;
+                            const h = parseInt(document.getElementById("h").value) ;
+                            const b = parseInt(document.getElementById("b").value) ;
+                            const g = document.getElementById("g").getContext("2d") ; 
+                            g.reset();
+                            for ( let i = 1 ; i <= b ; i++ )
+                            {
+                                const y = (s - (b * h))/2 + ((i-1) * h) ;
+                                for ( let j = 0 ; j < i ; j++ )
+                                {
+                                    const x = (s - (i * w))/2 + j * w ;
+                                    g.rect(x,y,w,h) ; 
+                                }
+                            }
+                            g.stroke() ; g.stroke() ; g.stroke() ; 
+                        }
+                    </script>
+                    <center><canvas id ="g" width="400px" height="400px" style="border:solid"></center>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner">
+                    <h3>Problem 3: <code>clicky_box</code></h3>
+                    <p>The function <code>clicky_box</code> will
+                    <ul>
+                        <li>Display a randomly positioned square in a PGL graphics window
+                        <li>When the square is clicked, and only when the square is clicked, it will move to a different random part of the screen
+                        <li>Track the number of clicks in the lower left.
+                    </ul>
+                    <p><b>Firstly</b>, add a colored and filled square of size <code>SQUARE_SIZE</code> to the center of the window. You can choose the color of the square. Ensure your square is displaying centered in the screen when you run your program before continuing.
+                    <p><b>Optionally,</b> add a listener to your window which will listen for when the user presses down the mouse button, and calls the <code>on_mouse_down</code> function when that occurs. Run your program and ensure that, now, when you click the mouse anywhere in the window, a message prints to the terminal saying as much!
+                    <p><b>Next,</b> add/update <code>on_mouse_down</code> function so that if (and only if) you click inside the colored square, the square moves to a new random position that causes it to be entirely within the window bounds, that is, fully visible within the graphic window. Make sure that nothing happens if you click outside the square: it should only move if you clicked within the square boundry. 
+                    <blockquote>There are several ways you can check to see if the mouse was clicked within the confines of the square, some easier and some harder. You may want to look <a href="https://jrembold.github.io/Website_Backup/class_files/cs151/PythonSummary.html">here</a> to refresh your memory about some functions/methods that may be useful.</blockquote>
+                    <p><b>Lastly</b> maintain a "score" <code>SCORE_DX</code> from the left wall and <code>SCORE_DY</code> up from the bottom. Every time that you click inside the square, you want to add one to the score, and every time you click outside the square, set the score to 0. <blockquote>There are a few ways you could handle this. One would be to keep track of the score purely inside a <code>GLabel</code>, getthing and setting the text of the label as necessary. Another would be to create a variable which you would increment or reset as needed, and then update the <code>GLabel</code> from the variable. Just be aware that if you go the variable route, you will need to add that variable as an attribute to the GWindow, or else you won’t be able to globally set its value within the callback function. </blockquote>
+				</div>
+			</div>
+		</div>
+        <div class="page">
+			<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+			<div class="page_outer">
+				<div style="height:.25in;"> <!-- Vertical space adjuster for box shadow --></div>
+				<div class="page_inner">
+                    <h3>Problem 3: <code>clicky_box</code></h3>
+                    <p>Here is demo. The label is a bit goofy looking due to web-embedding.
+                    <center><canvas id="someid" width="500px" height="500px" style="border:solid"></center>
+                    <script>
+                          const GW_WIDTH = 500;                      // Width of window
+                          const GW_HEIGHT = 500;                     // Height of window
+                          const SQUARE_SIZE = 50;                    // Width and height of square
+                          const SCORE_DX = 10;                       // Distance from left of window to origin
+                          const SCORE_DY = 40;                       // Distance up from bottom of window to baseline
+                          const SCORE_FONT = "bold 40pt serif";      // Font for score
+
+                          const canvas = document.getElementById('someid');
+                          const ctx = canvas.getContext('2d');
+                          let score = 0;
+
+                          // Function to get a random position for the square
+                          function get_r() {
+                            return Math.floor(Math.random() * (GW_WIDTH - SQUARE_SIZE));
+                          }
+
+                          // Function to draw the square at a specific location
+                          function drawSquare(x, y) {
+                            ctx.clearRect(0, 0, GW_WIDTH, GW_HEIGHT); // Clear the canvas
+                            ctx.fillStyle = "red";
+                            ctx.fillRect(x, y, SQUARE_SIZE, SQUARE_SIZE);
+
+                            drawScore();
+                          }
+
+                          // Function to draw the score
+                          function drawScore() {
+                            ctx.font = SCORE_FONT;
+                            ctx.fillStyle = "black";
+                            ctx.fillText(score, SCORE_DX, GW_HEIGHT - SCORE_DY);
+                          }
+
+                          // Initial square position
+                          let squareX = GW_WIDTH / 2 - SQUARE_SIZE / 2;
+                          let squareY = GW_HEIGHT / 2 - SQUARE_SIZE / 2;
+                          drawSquare(squareX, squareY);
+
+                          // Mouse click event listener
+                          canvas.addEventListener('click', function(event) {
+                            const mouseX = event.offsetX;
+                            const mouseY = event.offsetY;
+
+                            // Check if the click is inside the square
+                            if (mouseX >= squareX && mouseX <= squareX + SQUARE_SIZE &&
+                                mouseY >= squareY && mouseY <= squareY + SQUARE_SIZE) {
+                              squareX = get_r();
+                              squareY = get_r();
+                              score++;
+                            } else {
+                              score = 0;
+                            }
+
+                            drawSquare(squareX, squareY);
+                          });
+                    </script>
+                    <hr>
+                    <p>This code snippet defines how to calculate a random integer between 0 and <code>SOME_VAL</code>
+                    <hr><pre style="font-size:larger"><code style="font-size:larger">import random # at top of file, by other imports
+
+def get_r():
+    return random.randint(0, SOME_VAL)</code></pre><hr>
+                    <p>This code snippet defines how to configure a graphics window to perform a function after a click. Without this, 'on_mouse_down' will never run.
+                    <hr><pre style="font-size:larger"><code style="font-size:larger">gw.add_event_listener("click", on_mouse_down)</code></pre><hr>
+                    
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
